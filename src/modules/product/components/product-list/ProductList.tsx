@@ -19,7 +19,7 @@ export const ProductList: FC = () => {
     <div>
       <h1 className="title-product-list">Product List</h1>
       <div className="card-group">
-        <ul className="product-list serv">
+        <ul className="product-list">
           {products.map((product) => (
             <li>
               <ProductCard product={product} key={product.id} />

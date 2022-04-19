@@ -1,11 +1,15 @@
 @import "src/style.scss";
 
 .navbar {
-  padding: 499 788 76 50;
-}
-.navbar-link {
-  color: $color-red;
-  font-size: 1rem;
-  font-weight: bold;
-  text-transform: uppercase;
+  .navbar-link {
+    color: $color-red;
+    font-size: 1rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .cart {
+    margin-left: 87%;
+    background-color: $color-red;
+  }
 }

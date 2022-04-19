@@ -1,4 +1,5 @@
 import { FC } from "react";
+
 import { NavBar } from "./Navbar";
 
 const Header: FC = () => {

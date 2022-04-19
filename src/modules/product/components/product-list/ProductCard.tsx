@@ -9,7 +9,7 @@ export const ProductCard: FC<IProps> = ({ product }) => {
       <Card.Body>
         <Card.Title>{product.title}</Card.Title>
         <Card.Text>{product.category}</Card.Text>
-        <Card.Text>{product.price}</Card.Text>
+        <Card.Text className="price-title">{product.price}</Card.Text>
       </Card.Body>
     </Card>
   );
