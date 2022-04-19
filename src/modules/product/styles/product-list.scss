@@ -1,0 +1,27 @@
+@import "src/style.scss";
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+
+  .product-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 18rem;
+    padding: 0;
+    margin: 2rem;
+    border-bottom: 1px solid #e6e6e6;
+  }
+}
+
+.title-product-list {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-align: center;
+  color: $color-red;
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
