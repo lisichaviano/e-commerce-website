@@ -1,0 +1,31 @@
+.product-details {
+  display: flex;
+  flex-direction: row;
+
+  .image-detail {
+    width: 300px;
+    margin: 2rem;
+  }
+  .figure {
+    margin: 18px;
+  }
+
+  .list-group {
+    display: block;
+    width: 100%;
+    margin: 32px;
+  }
+
+  .title-details {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .price-details {
+    font-size: 1.2rem;
+    color: black;
+  }
+  .line-separator {
+    border-bottom: 1px dashed #000;
+    flex: 1;
+  }
+}
