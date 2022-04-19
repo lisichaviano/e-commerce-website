@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 
 import "./style.scss";
 import { Header } from "./modules/common";
@@ -9,13 +9,13 @@ import ScrollToTopOnNavigation from "./modules/common/components/ScrollToTopOnNa
 const App: FC = () => {
   return (
     <div>
-      <BrowserRouter>
+      <Router>
         <ScrollToTopOnNavigation />
         <Header />
         <div className="header-navbar">
           <AppRoutes />
         </div>
-      </BrowserRouter>
+      </Router>
     </div>
   );
 };

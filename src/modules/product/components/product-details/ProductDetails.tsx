@@ -1,20 +1,24 @@
-import { FC } from "react";
-import { useSelector } from "react-redux";
+import { FC, useEffect } from "react";
+import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
-import { Product } from "../../../../lib/types";
-import { productsSelector } from "../../redux/selectors";
+import { productByIdSelector } from "../../redux/selectors";
 import { ImagenDetail } from "./ImagenDetail";
 import { ProductInfo } from "./ProductInfo";
 import "../../styles/product-details.scss";
+import { setProducts } from "../../redux/actions";
+import { loadProducts } from "../../services";
 
 export const ProductDetails: FC = () => {
   const { productId } = useParams();
-  const products: Product[] = useSelector(productsSelector);
+  const dispatch = useDispatch();
+  const product = useSelector(productByIdSelector(Number(productId)));
 
-  const product = products.find(
-    (product) => productId && product.id === Number(productId)
-  );
+  useEffect(() => {
+    if (!product) {
+      loadProducts().then((products) => dispatch(setProducts(products)));
+    }
+  }, [product, dispatch]);
 
   return (
     <div>
