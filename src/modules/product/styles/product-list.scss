@@ -11,9 +11,36 @@
     justify-content: space-between;
     align-items: center;
     width: 300px;
-    height: 708px;
+    height: 350px;
     margin: 2rem;
     border-bottom: 1px solid #e6e6e6;
+    cursor: pointer;
+
+    .card-body {
+      width: 100%;
+      color: #4f4f4f;
+    }
+
+    .card-img-top {
+      padding: 8px 0;
+      max-height: 160px;
+      object-fit: contain;
+      margin: 10px;
+    }
+
+    .card-title {
+      line-height: 1.5em;
+      max-height: 3em;
+      overflow: hidden;
+    }
+
+    &:active {
+      filter: brightness(0.8);
+    }
+
+    &:hover {
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
 
     .price-title {
       font-weight: bold;

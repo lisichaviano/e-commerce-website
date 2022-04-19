@@ -21,9 +21,7 @@ export const ProductList: FC = () => {
       <div className="card-group">
         <ul className="product-list">
           {products.map((product) => (
-            <li>
-              <ProductCard product={product} key={product.id} />
-            </li>
+            <ProductCard product={product} key={product.id} />
           ))}
         </ul>
       </div>

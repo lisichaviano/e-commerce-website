@@ -12,7 +12,9 @@ const App: FC = () => {
       <BrowserRouter>
         <ScrollToTopOnNavigation />
         <Header />
-        <AppRoutes />
+        <div style={{ marginTop: "56px" }}>
+          <AppRoutes />
+        </div>
       </BrowserRouter>
     </div>
   );
