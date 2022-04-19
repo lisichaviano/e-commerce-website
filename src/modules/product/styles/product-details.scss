@@ -1,6 +1,9 @@
+@import "src/style.scss";
+
 .product-details {
   display: flex;
   flex-direction: row;
+  max-height: 350px;
 
   .image-detail {
     width: 300px;
@@ -14,27 +17,28 @@
     display: block;
     width: 100%;
     margin: 32px;
-  }
 
-  .title-details {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  .rate-details {
-    display: flex;
-    flex-direction: row;
-    justify-content: left;
+    .title-details {
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+    .rate-details {
+      display: flex;
+      flex-direction: row;
+      justify-content: left;
 
-    :first-child {
-      margin-right: 4px;
+      :first-child {
+        margin-right: 4px;
+      }
+    }
+    .price-details {
+      font-size: 1.2rem;
+      color: black;
     }
   }
-  .price-details {
-    font-size: 1.2rem;
-    color: black;
-  }
-  .line-separator {
-    border-bottom: 1px dashed #000;
-    flex: 1;
-  }
+}
+
+.btn-details {
+  margin: 1rem 0 1rem 23%;
+  background-color: $color-red;
 }

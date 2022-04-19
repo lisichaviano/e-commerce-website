@@ -33,7 +33,6 @@ export const ProductInfo: FC<IProps> = ({ product }) => {
           <p>{product.description}</p>
         </ListGroup.Item>
       </ListGroup>
-      <span className="line-separator"></span>
     </>
   );
 };

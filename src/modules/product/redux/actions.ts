@@ -6,3 +6,9 @@ export const setProducts = (products: Product[]) => {
     payload: { products },
   };
 };
+
+export const incrementCounter = () => {
+  return {
+    type: "INCREMENT_COUNTER",
+  };
+};

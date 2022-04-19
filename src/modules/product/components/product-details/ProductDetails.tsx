@@ -8,6 +8,7 @@ import { ProductInfo } from "./ProductInfo";
 import "../../styles/product-details.scss";
 import { setProducts } from "../../redux/actions";
 import { loadProducts } from "../../services";
+import { CartButton } from "./CartButton";
 
 export const ProductDetails: FC = () => {
   const { productId } = useParams();
@@ -23,10 +24,13 @@ export const ProductDetails: FC = () => {
   return (
     <div>
       {product && (
-        <div className="product-details">
-          <ImagenDetail img={product.image} />
-          <ProductInfo product={product} />
-        </div>
+        <>
+          <div className="product-details">
+            <ImagenDetail img={product.image} />
+            <ProductInfo product={product} />
+          </div>
+          <CartButton />
+        </>
       )}
     </div>
   );

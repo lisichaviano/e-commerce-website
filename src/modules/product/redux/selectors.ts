@@ -6,3 +6,6 @@ export const productsSelector = (state: { products: Product[] }) =>
 export const productByIdSelector =
   (id: number) => (state: { products: Product[] }) =>
     state.products.find((product) => id && product.id === id);
+
+export const incrementCounterSelector = (state: { cartCounter: number }) =>
+  state.cartCounter;
