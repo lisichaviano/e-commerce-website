@@ -1,6 +1,32 @@
 @import "src/style.scss";
 
 .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  background-color: #eeeeee;
+  box-shadow: 0 2px 2px #ccc;
+
+  padding: 0 20px 0 80px;
+
+  .navbar-brand {
+    a {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+
+      text-decoration: none;
+      color: #f00;
+
+      img {
+        height: 36px;
+        object-fit: contain;
+        margin-right: 10px;
+      }
+    }
+  }
+
   .navbar-link {
     color: $color-red;
     font-size: 1rem;
@@ -10,10 +36,11 @@
 
   .cart {
     margin: 0 0.3rem 0 auto;
-    background: white;
+    background: transparent;
     position: relative;
-    height: 30px;
-    width: 38px;
+    height: 40px;
+    width: 50px;
+    padding: 12px;
 
     .cart-icon {
       position: absolute;
@@ -22,15 +49,16 @@
       transform: translate(-50%, -50%);
       font-size: 1.5rem;
       color: $color-red;
+      height: 38px;
     }
 
     .cart-counter {
       position: absolute;
-      top: 33%;
+      top: 30%;
       left: 53%;
       transform: translate(-50%, -50%);
       font-weight: bold;
-      font-size: 0.8rem;
+      font-size: 1rem;
       color: white;
       z-index: 100;
     }

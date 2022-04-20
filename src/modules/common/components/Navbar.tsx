@@ -1,24 +1,40 @@
-import { FC } from "react";
+import { FC, useState } from "react";
 import { Nav, Navbar } from "react-bootstrap";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import "../styles/navbar.scss";
 import { Cart } from "./Cart";
 
 const NavBar: FC = () => {
+  const navigate = useNavigate();
+  const [activeKey, setActiveKey] = useState("/");
+
+  const linkClickHandler = (e: any) => {
+    const href = e.target.getAttribute("href");
+    setActiveKey(href);
+    navigate(href);
+    e.preventDefault();
+  };
+
   return (
-    <Navbar className="navbar" bg="light" variant="light" fixed="top">
-      <Link to="/">
-        <img
-          alt=""
-          src="/images1.jpg"
-          width="30"
-          height="30"
-          className="d-inline-block align-top"
-        />
-      </Link>
-      <Nav>
-        <Link to="/products"> Products </Link>
+    <Navbar className="navbar" variant="light" fixed="top">
+      <Navbar.Brand className="navbar-brand">
+        <Link to="/">
+          <img alt="" src="/logo.png" />
+          The Store
+        </Link>
+      </Navbar.Brand>
+      <Nav activeKey={activeKey}>
+        <Nav.Item>
+          <Nav.Link href="/" onClick={linkClickHandler}>
+            Home
+          </Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="/products" onClick={linkClickHandler}>
+            Products
+          </Nav.Link>
+        </Nav.Item>
       </Nav>
       <Cart />
     </Navbar>
