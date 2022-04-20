@@ -2,7 +2,7 @@ import { FC } from "react";
 import { Button } from "react-bootstrap";
 import { useDispatch } from "react-redux";
 
-import { incrementCounter } from "../../redux/actions";
+import { incrementCounter } from "../../../common/redux/actions";
 
 export const CartButton: FC = () => {
   const dispatch = useDispatch();

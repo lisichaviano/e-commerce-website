@@ -12,8 +12,10 @@ export const ProductList: FC = () => {
   const products: Product[] = useSelector(productsSelector);
 
   useEffect(() => {
-    loadProducts().then((products) => dispatch(setProducts(products)));
-  }, [dispatch]);
+    if (!products || products.length === 0) {
+      loadProducts().then((data) => dispatch(setProducts(data)));
+    }
+  }, [dispatch, products]);
 
   return (
     <div>
