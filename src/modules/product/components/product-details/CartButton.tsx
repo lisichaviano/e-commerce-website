@@ -1,15 +1,32 @@
+import { faMinus, faPlus } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FC } from "react";
 import { Button } from "react-bootstrap";
-import { useDispatch } from "react-redux";
-import { addToCart } from "../../../common/components/cart-shopping/redux/actions";
+import { useDispatch, useSelector } from "react-redux";
+import {
+  addToCart,
+  removeFromCart,
+} from "../../../common/components/cart-shopping/redux/actions";
+import { cartProductCount } from "../../../common/components/cart-shopping/redux/selectors";
+import "./../../styles/cart-button.scss";
 
 export const CartButton: FC<IProps> = ({ productId }) => {
   const dispatch = useDispatch();
   const addProductToCart = () => dispatch(addToCart(productId));
+  const removeProductFromCart = () => dispatch(removeFromCart(productId));
+  const productCount = useSelector(cartProductCount(productId));
   return (
-    <Button onClick={addProductToCart} className="add-cart-btn-details">
-      Add to cart
-    </Button>
+    <div className="add-remove-product">
+      <Button onClick={removeProductFromCart} className="add-cart-btn-details">
+        <FontAwesomeIcon icon={faMinus} />
+      </Button>
+
+      <span className="product-counter">{productCount} </span>
+
+      <Button onClick={addProductToCart} className="add-cart-btn-details">
+        <FontAwesomeIcon icon={faPlus} />
+      </Button>
+    </div>
   );
 };
 

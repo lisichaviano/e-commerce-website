@@ -10,15 +10,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-
-    .image-detail {
-      width: 300px;
-      margin: 2rem;
-    }
-    .add-cart-btn-details {
-      border-color: #230303;
-      background-color: $color-red;
-    }
   }
 
   .list-group {

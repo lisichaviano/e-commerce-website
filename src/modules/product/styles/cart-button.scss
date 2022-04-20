@@ -1,0 +1,24 @@
+@import "src/style.scss";
+
+.add-remove-product {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  .add-cart-btn-details {
+    border-color: #230303;
+    background-color: $color-red;
+    width: 20px;
+    height: 25px;
+    margin: 0.5rem;
+    padding: 0;
+  }
+
+  .product-counter {
+    font-weight: bold;
+    font-size: 1.5rem;
+  }
+}

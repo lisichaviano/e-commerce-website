@@ -33,34 +33,4 @@
     font-weight: bold;
     text-transform: uppercase;
   }
-
-  .cart {
-    margin: 0 0.3rem 0 auto;
-    background: transparent;
-    position: relative;
-    height: 40px;
-    width: 50px;
-    padding: 12px;
-
-    .cart-icon {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      font-size: 1.5rem;
-      color: $color-red;
-      height: 38px;
-    }
-
-    .cart-counter {
-      position: absolute;
-      top: 30%;
-      left: 53%;
-      transform: translate(-50%, -50%);
-      font-weight: bold;
-      font-size: 1rem;
-      color: white;
-      z-index: 100;
-    }
-  }
 }

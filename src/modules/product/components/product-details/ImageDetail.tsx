@@ -1,7 +1,7 @@
 import { FC } from "react";
 import { Figure } from "react-bootstrap";
 
-import "../../styles/product-details.scss";
+import "../../styles/image-detail.scss";
 
 export const ImagenDetail: FC<IProps> = ({ img }) => {
   return (
