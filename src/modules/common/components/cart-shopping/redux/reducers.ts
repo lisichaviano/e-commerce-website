@@ -1,6 +1,6 @@
 import { CartItem } from "../../../../../lib/types";
 
-const addToCartReducer = (
+const productCartReducer = (
   state: CartItem[] = [],
   action: { type: any; payload: any }
 ) => {
@@ -48,4 +48,4 @@ const addToCartReducer = (
   }
 };
 
-export { addToCartReducer };
+export { productCartReducer };

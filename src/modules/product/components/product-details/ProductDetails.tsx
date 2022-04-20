@@ -28,7 +28,7 @@ export const ProductDetails: FC = () => {
           <div className="product-details">
             <div className="product-details-img-btn">
               <ImagenDetail img={product.image} />
-              <CartButton />
+              <CartButton productId={product.id} />
             </div>
             <ProductInfo product={product} />
           </div>

@@ -2,10 +2,10 @@ import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { FC } from "react";
 import { useSelector } from "react-redux";
-import { cartCounterSelector } from "../../redux/selectors";
+import { cartTotalCount } from "./redux/selectors";
 
 const Cart: FC = () => {
-  const counter = useSelector(cartCounterSelector);
+  const counter = useSelector(cartTotalCount);
   return (
     <div className="cart">
       <FontAwesomeIcon className="cart-icon" icon={faCartShopping} />
