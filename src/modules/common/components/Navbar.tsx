@@ -3,7 +3,7 @@ import { Nav, Navbar } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 
 import "../styles/navbar.scss";
-import { Cart } from "./Cart";
+import { Cart } from "./cart-shopping/Cart";
 
 const NavBar: FC = () => {
   const navigate = useNavigate();
