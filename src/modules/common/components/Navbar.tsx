@@ -1,11 +1,9 @@
 import { FC } from "react";
-import { Button, Nav, Navbar } from "react-bootstrap";
+import { Nav, Navbar } from "react-bootstrap";
 import { Link } from "react-router-dom";
 
-import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
 import "../styles/navbar.scss";
+import { Cart } from "./Cart";
 
 const NavBar: FC = () => {
   return (
@@ -19,15 +17,10 @@ const NavBar: FC = () => {
           className="d-inline-block align-top"
         />
       </Link>
-
       <Nav>
         <Link to="/products"> Products </Link>
       </Nav>
-      <Button className="icon cart">
-        <span>
-          <FontAwesomeIcon icon={faCartShopping} />
-        </span>
-      </Button>
+      <Cart />
     </Navbar>
   );
 };
