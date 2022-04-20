@@ -5,8 +5,8 @@ import "../../styles/product-details.scss";
 
 export const ImagenDetail: FC<IProps> = ({ img }) => {
   return (
-    <Figure>
-      <Figure.Image className="image-detail" src={img} />
+    <Figure className="image-detail">
+      <Figure.Image src={img} />
     </Figure>
   );
 };

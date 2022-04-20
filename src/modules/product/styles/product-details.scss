@@ -3,19 +3,27 @@
 .product-details {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   max-height: 350px;
 
-  .image-detail {
-    width: 300px;
-    margin: 2rem;
-  }
-  .figure {
-    margin: 18px;
+  .product-details-img-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .image-detail {
+      width: 300px;
+      margin: 2rem;
+    }
+    .add-cart-btn-details {
+      border-color: #230303;
+      background-color: $color-red;
+    }
   }
 
   .list-group {
     display: block;
-    width: 100%;
+    width: 50%;
     margin: 32px;
 
     .title-details {
@@ -36,9 +44,4 @@
       color: black;
     }
   }
-}
-
-.btn-details {
-  margin: 1rem 0 1rem 23%;
-  background-color: $color-red;
 }

@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { useParams } from "react-router-dom";
 
 import { productByIdSelector } from "../../redux/selectors";
-import { ImagenDetail } from "./ImagenDetail";
+import { ImagenDetail } from "./ImageDetail";
 import { ProductInfo } from "./ProductInfo";
 import "../../styles/product-details.scss";
 import { setProducts } from "../../redux/actions";
@@ -26,10 +26,12 @@ export const ProductDetails: FC = () => {
       {product && (
         <>
           <div className="product-details">
-            <ImagenDetail img={product.image} />
+            <div className="product-details-img-btn">
+              <ImagenDetail img={product.image} />
+              <CartButton />
+            </div>
             <ProductInfo product={product} />
           </div>
-          <CartButton />
         </>
       )}
     </div>

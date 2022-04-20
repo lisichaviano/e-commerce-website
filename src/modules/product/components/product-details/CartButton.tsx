@@ -8,7 +8,7 @@ export const CartButton: FC = () => {
   const dispatch = useDispatch();
   const addToCart = () => dispatch(incrementCounter());
   return (
-    <Button onClick={addToCart} className="btn-details">
+    <Button onClick={addToCart} className="add-cart-btn-details">
       Add to cart
     </Button>
   );
