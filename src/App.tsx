@@ -2,9 +2,9 @@ import { FC } from "react";
 import { BrowserRouter as Router } from "react-router-dom";
 
 import "./style.scss";
-import { Header } from "./modules/common/components/navbar/Header";
+import { Header } from "./modules/common/navbar/Header";
 import { AppRoutes } from "./routes";
-import ScrollToTopOnNavigation from "./modules/common/components/ScrollToTopOnNavigation";
+import ScrollToTopOnNavigation from "./modules/common/ScrollToTopOnNavigation";
 
 const App: FC = () => {
   return (

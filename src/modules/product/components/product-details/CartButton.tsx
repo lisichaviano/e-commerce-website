@@ -6,8 +6,8 @@ import { useDispatch, useSelector } from "react-redux";
 import {
   addToCart,
   removeFromCart,
-} from "../../../common/components/cart-shopping/redux/actions";
-import { cartProductCountSelector } from "../../../common/components/cart-shopping/redux/selectors";
+} from "../../../common/cart-shopping/redux/actions";
+import { cartProductCountSelector } from "../../../common/cart-shopping/redux/selectors";
 import "./../../styles/cart-button.scss";
 
 export const CartButton: FC<IProps> = ({ productId }) => {

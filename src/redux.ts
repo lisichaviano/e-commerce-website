@@ -1,6 +1,6 @@
 import { combineReducers, createStore } from "redux";
 import { productsReducer } from "./modules/product/redux/reducers";
-import { productCartReducer } from "./modules/common/components/cart-shopping/redux/reducers";
+import { productCartReducer } from "./modules/common/cart-shopping/redux/reducers";
 
 const rootReducer = combineReducers({
   products: productsReducer,

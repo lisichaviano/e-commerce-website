@@ -9,7 +9,7 @@ import {
 } from "./redux/selectors";
 import "./styles/product-list-cart.scss";
 import { clearCart } from "./redux/actions";
-import { formatMoney } from "../../../../lib/utils";
+import { formatMoney } from "../../../lib/utils";
 
 export const ProductListCart: FC = () => {
   const dispatch = useDispatch();

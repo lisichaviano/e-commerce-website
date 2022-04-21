@@ -1,4 +1,4 @@
-import { CartItem } from "../../../../../lib/types";
+import { CartItem } from "../../../../lib/types";
 
 const productCartReducer = (
   state: CartItem[] = [],

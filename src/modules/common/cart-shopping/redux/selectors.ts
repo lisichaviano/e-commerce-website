@@ -1,4 +1,4 @@
-import { CartItem, Product } from "../../../../../lib/types";
+import { CartItem, Product } from "../../../../lib/types";
 
 export const cartProductCountSelector =
   (productId: number) => (state: { cart: CartItem[] }) =>
