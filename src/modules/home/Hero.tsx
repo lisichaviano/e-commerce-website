@@ -1,30 +1,45 @@
 import { FC } from "react";
 import { Carousel } from "react-bootstrap";
 
+import "./styles/hero.scss";
+
 const Hero: FC = () => {
   return (
     <Carousel>
       <Carousel.Item interval={1000}>
-        <img className="d-block w-100" src="y.webp" alt="First slide" />
+        <img
+          className="d-block w-100"
+          src="online-shopping.png"
+          alt="First slide"
+        />
         <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item interval={500}>
-        <img className="d-block w-100" src="y2.jpg" alt="Second slide" />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          <h1>Shop online here</h1>
+          <p>Get here great articles for young professionals.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-        <img className="d-block w-100" src="y3.jpg" alt="Third slide" />
+        <img
+          className="d-block w-100"
+          src="shoping-girl.png"
+          alt="Second slide"
+        />
         <Carousel.Caption>
-          <h3>Third slide label</h3>
+          <h3>See the products below</h3>
           <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
+            You can find below excellent electronics, clothing, accessories for
+            young professionals.
           </p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item interval={500}>
+        <img
+          className="d-block w-100"
+          src="man-shopping.png"
+          alt="Third slide"
+        />
+        <Carousel.Caption>
+          <h3>Get the products you need here</h3>
+          <p>Find the necessary products here.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>

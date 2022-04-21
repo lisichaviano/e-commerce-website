@@ -10,11 +10,16 @@
 
   .add-cart-btn-details {
     border-color: #230303;
-    background-color: $color-red;
+    background-color: #eeeeee;
     width: 20px;
     height: 25px;
     margin: 0.5rem;
     padding: 0;
+
+    .svg-inline--fa {
+      font-size: 1rem;
+      color: rgba(0, 0, 0, 0.9);
+    }
   }
 
   .product-counter {

@@ -1,3 +1,5 @@
+@import "src/style.scss";
+
 .list-group {
   width: 100%;
   .title-list {
@@ -53,6 +55,13 @@
 
     button {
       margin-left: 16px;
+      background-color: $color-red;
+      border-color: rgba(0, 0, 0, 0.9);
+    }
+    .clear-button {
+      border-color: #230303;
+      background-color: #eeeeee;
+      color: rgba(0, 0, 0, 0.9);
     }
   }
 

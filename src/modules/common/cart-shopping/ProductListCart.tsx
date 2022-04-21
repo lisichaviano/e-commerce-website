@@ -43,7 +43,9 @@ export const ProductListCart: FC = () => {
         </span>
       </ListGroup.Item>
       <ListGroup.Item className="list-buttons">
-        <Button onClick={clearCartHandle}>Clear</Button>
+        <Button className="clear-button" onClick={clearCartHandle}>
+          Clear
+        </Button>
         <Button>Pay</Button>
       </ListGroup.Item>
     </ListGroup>
