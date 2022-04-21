@@ -9,7 +9,7 @@ import "../../styles/product-info.scss";
 export const ProductInfo: FC<IProps> = ({ product }) => {
   return (
     <>
-      <ListGroup variant="flush" className="list-group">
+      <ListGroup variant="flush" className="list-group-info">
         <ListGroup.Item className="title-details">
           {product.title}
         </ListGroup.Item>
