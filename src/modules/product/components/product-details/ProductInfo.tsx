@@ -3,6 +3,8 @@ import { ListGroup } from "react-bootstrap";
 import ReactStars from "react-stars";
 
 import { Product } from "../../../../lib/types";
+import { formatMoney } from "../../../../lib/utils";
+import "../../styles/product-info.scss";
 
 export const ProductInfo: FC<IProps> = ({ product }) => {
   return (
@@ -27,7 +29,7 @@ export const ProductInfo: FC<IProps> = ({ product }) => {
         </ListGroup.Item>
         <ListGroup.Item>{product.category}</ListGroup.Item>
         <ListGroup.Item className="price-details">
-          {product.price}
+          {formatMoney(product.price)}
         </ListGroup.Item>
         <ListGroup.Item>
           <p>{product.description}</p>

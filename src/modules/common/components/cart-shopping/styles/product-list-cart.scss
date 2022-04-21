@@ -1,0 +1,63 @@
+.list-group {
+  width: 100%;
+  .title-list {
+    font-size: 1.5rem;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  .list-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .product-item {
+      display: flex;
+      flex-direction: column;
+
+      font-size: 14px;
+
+      .qty {
+        margin-top: 4px;
+        font-size: 12px;
+        font-weight: bold;
+        color: darkgreen;
+      }
+    }
+
+    .price {
+      width: 100px;
+      text-align: right;
+      font-size: 12px;
+      font-weight: 500;
+      color: darkgreen;
+    }
+
+    .subtotal {
+      width: 100%;
+      text-align: right;
+      font-size: 12px;
+      font-weight: 500;
+      color: darkgreen;
+    }
+  }
+
+  .list-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-top: 32px;
+
+    padding-right: 0;
+
+    button {
+      margin-left: 16px;
+    }
+  }
+
+  .price-subtotal {
+    font-size: 1.2rem;
+    color: black;
+  }
+}

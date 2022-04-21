@@ -7,14 +7,14 @@ import {
   addToCart,
   removeFromCart,
 } from "../../../common/components/cart-shopping/redux/actions";
-import { cartProductCount } from "../../../common/components/cart-shopping/redux/selectors";
+import { cartProductCountSelector } from "../../../common/components/cart-shopping/redux/selectors";
 import "./../../styles/cart-button.scss";
 
 export const CartButton: FC<IProps> = ({ productId }) => {
   const dispatch = useDispatch();
   const addProductToCart = () => dispatch(addToCart(productId));
   const removeProductFromCart = () => dispatch(removeFromCart(productId));
-  const productCount = useSelector(cartProductCount(productId));
+  const productCount = useSelector(cartProductCountSelector(productId));
   return (
     <div className="add-remove-product">
       <Button onClick={removeProductFromCart} className="add-cart-btn-details">

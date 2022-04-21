@@ -1,0 +1,23 @@
+.list-group {
+  display: block;
+  width: 30%;
+  margin: 32px;
+
+  .title-details {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .rate-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+
+    :first-child {
+      margin-right: 4px;
+    }
+  }
+  .price-details {
+    font-size: 1.2rem;
+    color: black;
+  }
+}
