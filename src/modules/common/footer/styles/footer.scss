@@ -1,0 +1,36 @@
+.footer {
+  padding-top: 12px;
+  background-color: #212529;
+  border-top: 1px solid #e5e5e5;
+  color: #6c757d;
+  font-size: 14px;
+  text-align: start;
+
+  .footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    a {
+      display: flex;
+      flex-direction: row;
+      text-decoration: none;
+      color: #f00;
+
+      img {
+        height: 90px;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .copy-right {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+    margin-top: 10px;
+    background-color: #6c757d4d;
+    padding: 12px;
+  }
+}

@@ -5,6 +5,7 @@ import "./style.scss";
 import { Header } from "./modules/common/navbar/Header";
 import { AppRoutes } from "./routes";
 import ScrollToTopOnNavigation from "./modules/common/ScrollToTopOnNavigation";
+import { Footer } from "./modules/common/footer/Footer";
 
 const App: FC = () => {
   return (
@@ -15,6 +16,7 @@ const App: FC = () => {
         <div className="header-navbar">
           <AppRoutes />
         </div>
+        <Footer />
       </Router>
     </div>
   );
