@@ -1,58 +1,76 @@
 @import "src/style.scss";
 
-.product-list {
+.product-list-container {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
-  align-items: flex-start;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
 
-  .product-item {
+  .product-list {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 300px;
-    height: 350px;
-    margin: 2rem;
-    border-bottom: 1px solid #e6e6e6;
-    cursor: pointer;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
 
-    .card-body {
-      width: 100%;
-      color: #4f4f4f;
-    }
+    .product-item {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      width: 300px;
+      height: 350px;
+      margin: 2rem;
+      border-bottom: 1px solid #e6e6e6;
+      cursor: pointer;
 
-    .card-img-top {
-      padding: 8px 0;
-      max-height: 160px;
-      object-fit: contain;
-      margin: 10px;
-    }
+      .card-body {
+        width: 100%;
+        color: #4f4f4f;
+      }
 
-    .card-title {
-      line-height: 1.5em;
-      max-height: 3em;
-      overflow: hidden;
-    }
+      .card-img-top {
+        padding: 8px 0;
+        max-height: 160px;
+        object-fit: contain;
+        margin: 10px;
+      }
 
-    &:active {
-      filter: brightness(0.8);
-    }
+      .card-title {
+        line-height: 1.5em;
+        max-height: 3em;
+        overflow: hidden;
+      }
 
-    &:hover {
-      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
-    }
+      &:active {
+        filter: brightness(0.8);
+      }
 
-    .price-title {
-      font-weight: bold;
+      &:hover {
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .price-title {
+        font-weight: bold;
+      }
     }
   }
-}
 
-.title-product-list {
-  font-size: 1.5rem;
-  font-weight: bold;
-  text-align: center;
-  color: $color-red;
-  text-transform: uppercase;
-  margin: 5rem 0 2rem 0;
+  .title-product-list {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    color: $color-red;
+    text-transform: uppercase;
+    margin: 5rem 0 2rem 0;
+  }
+
+  .product-list-validation {
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: center;
+    color: #4f4f4f;
+    margin-bottom: 10px;
+  }
 }
