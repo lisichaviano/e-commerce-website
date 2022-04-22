@@ -13,8 +13,8 @@ const Hero: FC = () => {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h1>Shop online here</h1>
-          <p>Get here great articles for young professionals.</p>
+          <h1>Shop online</h1>
+          <p>Get great articles for young professionals.</p>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
@@ -38,8 +38,8 @@ const Hero: FC = () => {
           alt="Third slide"
         />
         <Carousel.Caption>
-          <h3>Get the products you need here</h3>
-          <p>Find the necessary products here.</p>
+          <h3>Get the products you need</h3>
+          <p>Find the necessary products.</p>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
