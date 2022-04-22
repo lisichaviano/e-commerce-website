@@ -7,7 +7,7 @@ export const Footer: FC = () => {
   return (
     <footer className="footer">
       <div className="footer-content">
-        <Link to="/">
+        <Link className="footer-link-logo" to="/">
           <img alt="" src="/logo.png" />
           The Store
         </Link>

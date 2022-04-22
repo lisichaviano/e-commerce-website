@@ -20,7 +20,7 @@ const Hero: FC = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
-          src="shoping-girl.png"
+          src="shopping-girl.png"
           alt="Second slide"
         />
         <Carousel.Caption>
